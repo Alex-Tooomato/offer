@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -50,6 +52,13 @@
 					"id" : "offer002::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-offer002-Debug-f80375a7f4f02c73d08d.json",
 					"name" : "offer002",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "offer003::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-offer003-Debug-a8cdc7bd81cab4e5384a.json",
+					"name" : "offer003",
 					"projectIndex" : 0
 				}
 			]

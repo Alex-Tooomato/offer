@@ -118,6 +118,39 @@ build offer002.exe: CXX_EXECUTABLE_LINKER__offer002_Debug CMakeFiles/offer002.di
   TARGET_IMPLIB = liboffer002.dll.a
   TARGET_PDB = offer002.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target offer003
+
+
+#############################################
+# Order-only phony target for offer003
+
+build cmake_object_order_depends_target_offer003: phony || CMakeFiles/offer003.dir
+
+build CMakeFiles/offer003.dir/offerÍ»»÷003.cpp.obj: CXX_COMPILER__offer003_Debug D$:/leetcode/offer/offerÍ»»÷003.cpp || cmake_object_order_depends_target_offer003
+  DEP_FILE = CMakeFiles\offer003.dir\offerÍ»»÷003.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\offer003.dir
+  OBJECT_FILE_DIR = CMakeFiles\offer003.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target offer003
+
+
+#############################################
+# Link the executable offer003.exe
+
+build offer003.exe: CXX_EXECUTABLE_LINKER__offer003_Debug CMakeFiles/offer003.dir/offerÍ»»÷003.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\offer003.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = offer003.exe
+  TARGET_IMPLIB = liboffer003.dll.a
+  TARGET_PDB = offer003.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -136,6 +169,8 @@ build offer001: phony offer001.exe
 
 build offer002: phony offer002.exe
 
+build offer003: phony offer003.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -144,7 +179,7 @@ build offer002: phony offer002.exe
 #############################################
 # Folder: D:/leetcode/offer/cmake-build-debug
 
-build all: phony offer001.exe offer002.exe
+build all: phony offer001.exe offer002.exe offer003.exe
 
 # =============================================================================
 # Built-in targets

@@ -17,7 +17,7 @@ public:
             carry+=i<a.size()?(a.at(i)=='1'):0;
             carry+=i<b.size()?(b.at(i)=='1'):0;
             res.push_back((carry%2)?'1':'0');
-            carry/2;
+            carry/=2;
         }
         if(carry){
             res.push_back('1');
