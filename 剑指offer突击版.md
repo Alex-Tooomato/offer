@@ -115,9 +115,9 @@ return ans;
 # offer突击003
 
 方法一：Brian Kernighan 算法
-最直观的做法是对从 00 到 nn 的每个整数直接计算「一比特数」。每个int 型的数都可以用 3232 位二进制数表示，只要遍历其二进制表示的每一位即可得到 11 的数目。
+最直观的做法是对从$0$ 到 $n$ 的每个整数直接计算「一比特数」。每个int 型的数都可以用 32 位二进制数表示，只要遍历其二进制表示的每一位即可得到 $1$的数目。
 
-利用Brian Kernighan 算法，可以在一定程度上进一步提升计算速度。Brian Kernighan 算法的原理是：对于任意整数 xx，令 x=x~\&~(x-1)x=x & (x−1)，该运算将 xx 的二进制表示的最后一个 11 变成 00。因此，对 xx 重复该操作，直到 xx 变成 00，则操作次数即为 xx 的「一比特数」。
+利用Brian Kernighan 算法，可以在一定程度上进一步提升计算速度。Brian Kernighan 算法的原理是：对于任意整数 x，令 $x=x\&(x-1)$，该运算将 x 的二进制表示的最后一个 1 变成 0。因此，对 x 重复该操作，直到 x 变成 0，则操作次数即为 x 的「一比特数」。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200526103654580.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzY4ODQ4Mw==,size_16,color_FFFFFF,t_70#pic_center)
 
@@ -137,5 +137,52 @@ return ans;
 
 方法四：动态规划——最低设置位
 
-设y=x&(x-1)，则y为让x的最低设置位从1变成0之后的数
+定义正整数 x 的「最低设置位」为 x 的二进制表示中的最低的 1 所在位。例如，1010 的二进制表示是$ 1010_{(2)}$
+其最低设置位为 2，对应的二进制表示是 $10_{(2)}$
+
+设y=x&(x-1)，则y为让x的最低设置位从1变成0之后的数，显然 $0 \le y<x$，$\textit{bits}[x]=\textit{bits}[y]+1$。因此对任意正整数 x，都有 $\textit{bits}[x]=\textit{bits}[x~\&~(x-1)]+1$
+
+遍历从$ 1$ 到$ n$的每个正整数 $i$，计算的值。最终得到的数组$ \textit{bits}$即为答案。
+
+# offer突击004
+
+方法一：散列表unordered_map。用unordered_map遍历数组中每个数，并记录个数，然后取出其中计数为1的数。
+
+```c++
+class Solution {
+public:
+    int singleNumber(vector<int>& nums) {
+        int ans=0;
+	unordered_map<int,int> freq;
+        for(int num : nums){
+            ++freq[num];
+        }
+        for(auto [num,ooc]:freq){
+            if(ooc==1){
+               ans=num; 
+                break;
+            }
+        }
+        return ans;
+};
+
+```
+
+方法二：由于数组里的数的数量除了1就是3，则若用二进制表示，每一位相加结果模3即为所要寻找的数对应位的值(0或1)。
+
+```c++
+	int singleNumber2(vector<int>& nums) {
+        int ans=0;
+        for(int i=0;i<32;i++){
+            int total=0;
+            for(int num:nums){
+                total+=((num>>i)&1);
+            }
+            if(total%3){
+                ans|=1<<i;
+            }
+    }
+        return ans;
+    }
+```
 
