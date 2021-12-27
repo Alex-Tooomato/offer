@@ -253,3 +253,35 @@ public:
 
 双指针法：三元的加法暴力解法是三种for循环，复杂度为$ O(n^3)$ ，但如果确定了三元中的某个值，只需要计算另外两个值，则又回到了题006的解法。若要使用双指针，则仍需要对原序列进行排序。
 
+```c++
+class Solution {
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        vector<vector<int>> ans;
+        if (nums.size() < 3)
+            return ans;
+        std::sort(nums.begin(), nums.end());
+
+        for(int i=0;i<nums.size();i++){
+            //去重
+            if(i > 0 && nums[i] == nums[i - 1])
+                continue;
+            int left=i+1;
+            int right=nums.size()-1;
+            while(left<right){
+                if(nums[left]+nums[right]==-nums[i]){
+                    ans.push_back({nums[i],nums[left],nums[right]});
+                    //去重
+                    while(left<right&&(nums[left]==nums[++left]));
+                    while(left<right&&(nums[right]==nums[--right]));
+                } else if(nums[left]+nums[right]>-nums[i]){
+                    right--;
+                } else{
+                    left ++;
+                }
+            }
+        }
+        return ans;
+    }
+};
+```

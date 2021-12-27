@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/offer004.dir/offer突击004.cpp.o -o offer004 

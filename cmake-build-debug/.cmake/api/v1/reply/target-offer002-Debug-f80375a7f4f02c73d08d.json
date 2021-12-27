@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "offer002"
+			"path" : "offer002.exe"
+		},
+		{
+			"path" : "offer002.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -68,12 +71,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "offer002",
-	"nameOnDisk" : "offer002",
+	"nameOnDisk" : "offer002.exe",
 	"paths" : 
 	{
 		"build" : ".",
