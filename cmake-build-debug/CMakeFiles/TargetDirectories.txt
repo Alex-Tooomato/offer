@@ -1,5 +1,7 @@
-D:/leetcode/offer/cmake-build-debug/CMakeFiles/offer001.dir
-D:/leetcode/offer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/leetcode/offer/cmake-build-debug/CMakeFiles/offer002.dir
-D:/leetcode/offer/cmake-build-debug/CMakeFiles/offer003.dir
-D:/leetcode/offer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pc/leetcode/offer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/pc/leetcode/offer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/pc/leetcode/offer/cmake-build-debug/CMakeFiles/offer005.dir
+/home/pc/leetcode/offer/cmake-build-debug/CMakeFiles/offer001.dir
+/home/pc/leetcode/offer/cmake-build-debug/CMakeFiles/offer002.dir
+/home/pc/leetcode/offer/cmake-build-debug/CMakeFiles/offer003.dir
+/home/pc/leetcode/offer/cmake-build-debug/CMakeFiles/offer004.dir

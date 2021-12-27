@@ -1,4 +1,4 @@
-"D:\Clion\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Clion/CLion 2021.3/bin/ninja/win/ninja.exe" -G Ninja D:\leetcode\offer
+/home/pc/clion-213.5744.5/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/pc/leetcode/offer
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/leetcode/offer/cmake-build-debug
+-- Build files have been written to: /home/pc/leetcode/offer/cmake-build-debug

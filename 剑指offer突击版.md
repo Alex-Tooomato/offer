@@ -186,3 +186,70 @@ public:
     }
 ```
 
+# offer突击005
+
+**解题思路**
+使用二进制的思想，使用states[i]来存储words[i]对应的二进制值，words[i] [j] - 'a' 代表对应哪个位，最后用&的思想，相与为0说明两者没有相同字符
+
+```c++
+class Solution {
+public:
+    int maxProduct(vector<string>& words) {
+        int n=words.size();
+        vector<int> states(n);
+        for (int i=0;i<n;i++){
+            states[i]=0;
+            int m=words[i].size();
+            for(int j=0;j<m;j++){
+//                states[i]|=(1<<(words[i].at(j)-'a'));//用|=保证即使出现重复也不会记录
+                states[i]|=(1<<(words[i][j]-'a'));//用|=保证即使出现重复也不会记录
+            }
+        }
+        int ans=0;
+        for (int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if((states[i]&states[j])==0){
+                    int tmp=words[i].size()*words[j].size();
+                    ans=max(ans,tmp);
+                }
+            }
+        }
+        return ans;
+    }
+};
+```
+
+ # offer突击006
+
+**解题思路**
+
+双指针法：在使用双指针求解问题时，要求的数组往往是有序的，为什么需要有序呢？因为需要保证移动一个指针，答案的大小是落在目标范围内的。每次移动需要缩小搜索范围。
+
+```c++
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& numbers, int target) {
+       int left=0;
+       int right = numbers.size()-1;
+       while(left<right){
+           int sum=numbers[left]+numbers[right];
+           if(sum==target){
+               return {left,right};
+           }else if(sum > target){
+               right--;
+           } else{
+               left++;
+           }
+       }
+        return{};
+
+    }
+};
+```
+
+# offer突击007
+
+解题思路
+
+双指针法：三元的加法暴力解法是三种for循环，复杂度为$ O(n^3)$ ，但如果确定了三元中的某个值，只需要计算另外两个值，则又回到了题006的解法。若要使用双指针，则仍需要对原序列进行排序。
+

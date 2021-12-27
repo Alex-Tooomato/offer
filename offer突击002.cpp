@@ -31,6 +31,7 @@ int main()
     Solution su;
     string a="11";
     string b="01";
+    cout<<a.size()<<endl;
     string ans=su.addBinary(a,b);
     cout<<"ans="<<ans<<endl;
     return 0;
