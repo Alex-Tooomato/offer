@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/pc/clion-213.5744.5/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/pc/clion-2021.3.1/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/pc/clion-213.5744.5/bin/cmake/linux/bin/cmake -E rm -f
+RM = /home/pc/clion-2021.3.1/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -65,25 +65,25 @@ CMAKE_BINARY_DIR = /home/pc/leetcode/offer/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/pc/clion-213.5744.5/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/pc/clion-213.5744.5/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/pc/clion-2021.3.1/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/pc/clion-2021.3.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -115,6 +115,45 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named offer008
+
+# Build rule for target.
+offer008: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 offer008
+.PHONY : offer008
+
+# fast build rule for target.
+offer008/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer008.dir/build.make CMakeFiles/offer008.dir/build
+.PHONY : offer008/fast
+
+#=============================================================================
+# Target rules for targets named offer007
+
+# Build rule for target.
+offer007: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 offer007
+.PHONY : offer007
+
+# fast build rule for target.
+offer007/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer007.dir/build.make CMakeFiles/offer007.dir/build
+.PHONY : offer007/fast
+
+#=============================================================================
+# Target rules for targets named offer006
+
+# Build rule for target.
+offer006: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 offer006
+.PHONY : offer006
+
+# fast build rule for target.
+offer006/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer006.dir/build.make CMakeFiles/offer006.dir/build
+.PHONY : offer006/fast
 
 #=============================================================================
 # Target rules for targets named offer005
@@ -301,6 +340,78 @@ offer突击005.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer005.dir/build.make CMakeFiles/offer005.dir/offer突击005.cpp.s
 .PHONY : offer突击005.cpp.s
 
+offer突击006.o: offer突击006.cpp.o
+.PHONY : offer突击006.o
+
+# target to build an object file
+offer突击006.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer006.dir/build.make CMakeFiles/offer006.dir/offer突击006.cpp.o
+.PHONY : offer突击006.cpp.o
+
+offer突击006.i: offer突击006.cpp.i
+.PHONY : offer突击006.i
+
+# target to preprocess a source file
+offer突击006.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer006.dir/build.make CMakeFiles/offer006.dir/offer突击006.cpp.i
+.PHONY : offer突击006.cpp.i
+
+offer突击006.s: offer突击006.cpp.s
+.PHONY : offer突击006.s
+
+# target to generate assembly for a file
+offer突击006.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer006.dir/build.make CMakeFiles/offer006.dir/offer突击006.cpp.s
+.PHONY : offer突击006.cpp.s
+
+offer突击007.o: offer突击007.cpp.o
+.PHONY : offer突击007.o
+
+# target to build an object file
+offer突击007.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer007.dir/build.make CMakeFiles/offer007.dir/offer突击007.cpp.o
+.PHONY : offer突击007.cpp.o
+
+offer突击007.i: offer突击007.cpp.i
+.PHONY : offer突击007.i
+
+# target to preprocess a source file
+offer突击007.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer007.dir/build.make CMakeFiles/offer007.dir/offer突击007.cpp.i
+.PHONY : offer突击007.cpp.i
+
+offer突击007.s: offer突击007.cpp.s
+.PHONY : offer突击007.s
+
+# target to generate assembly for a file
+offer突击007.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer007.dir/build.make CMakeFiles/offer007.dir/offer突击007.cpp.s
+.PHONY : offer突击007.cpp.s
+
+offer突击008.o: offer突击008.cpp.o
+.PHONY : offer突击008.o
+
+# target to build an object file
+offer突击008.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer008.dir/build.make CMakeFiles/offer008.dir/offer突击008.cpp.o
+.PHONY : offer突击008.cpp.o
+
+offer突击008.i: offer突击008.cpp.i
+.PHONY : offer突击008.i
+
+# target to preprocess a source file
+offer突击008.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer008.dir/build.make CMakeFiles/offer008.dir/offer突击008.cpp.i
+.PHONY : offer突击008.cpp.i
+
+offer突击008.s: offer突击008.cpp.s
+.PHONY : offer突击008.s
+
+# target to generate assembly for a file
+offer突击008.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offer008.dir/build.make CMakeFiles/offer008.dir/offer突击008.cpp.s
+.PHONY : offer突击008.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -314,6 +425,9 @@ help:
 	@echo "... offer003"
 	@echo "... offer004"
 	@echo "... offer005"
+	@echo "... offer006"
+	@echo "... offer007"
+	@echo "... offer008"
 	@echo "... offer突击001.o"
 	@echo "... offer突击001.i"
 	@echo "... offer突击001.s"
@@ -329,6 +443,15 @@ help:
 	@echo "... offer突击005.o"
 	@echo "... offer突击005.i"
 	@echo "... offer突击005.s"
+	@echo "... offer突击006.o"
+	@echo "... offer突击006.i"
+	@echo "... offer突击006.s"
+	@echo "... offer突击007.o"
+	@echo "... offer突击007.i"
+	@echo "... offer突击007.s"
+	@echo "... offer突击008.o"
+	@echo "... offer突击008.i"
+	@echo "... offer突击008.s"
 .PHONY : help
 
 

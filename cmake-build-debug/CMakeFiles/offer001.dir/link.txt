@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/offer001.dir/offer突击001.cpp.o -o offer001 

@@ -285,3 +285,44 @@ public:
     }
 };
 ```
+
+# offer突击008
+
+1. 滑动窗口
+
+   定义两个指针$start$和$end$分别表示子数组（滑动窗口的窗口）的开始位置和结束位置，维护变量$sum$存储子数组中的元素和（即从$nums[start]$到$nums[end]$的元素和）。
+
+   初始状态下，$start$和$end$都指向下标$0$，$sum$的值为$0$。
+
+   每一轮迭代，将$nums[end]$加到$sum$，如果$sum>target$，则更新子数组的最小长度（此时子数组的长度是$end-start+1$），然后将$nums[start]$从$sum$中减去并将$start$右移（加一），直到$sum<target$，在此过程中同样更新子数组的最小长度。每一轮迭代的最后，将$end$右移。
+
+   ```c++
+   class Solution {
+   public:
+       int minSubArrayLen(int s, vector<int>& nums) {
+           int n = nums.size();
+           if (n == 0) {
+               return 0;
+           }
+           int ans = INT_MAX;
+           int start = 0, end = 0;
+           int sum = 0;
+           while (end < n) {
+               sum += nums[end];
+               while (sum >= s) {
+                   ans = min(ans, end - start + 1);
+                   sum -= nums[start];
+                   start++;
+               }
+               end++;
+           }
+           return ans == INT_MAX ? 0 : ans;
+       }
+   };
+   ```
+
+   
+
+1. 前缀和+二分法
+
+   首先计算出前缀和，即$sums[i]$表示前$i$个元素的和.得到前缀和后对于每个开始下标$i$（从$1$到$n$），可通过二分查找得到大于或等于$i$​的最小下标bound，使得 $\text{sums}[\textit{bound}]-\text{sums}[i-1] \ge target$，并更新子数组的最小长度（此时子数组的长度是$ \textit{bound}-(i-1)$）。

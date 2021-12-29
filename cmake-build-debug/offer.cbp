@@ -17,6 +17,108 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/pc/leetcode/offer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="offer008">
+				<Option output="/home/pc/leetcode/offer/cmake-build-debug/offer008" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pc/leetcode/offer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 offer008"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="offer008/fast">
+				<Option output="/home/pc/leetcode/offer/cmake-build-debug/offer008" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pc/leetcode/offer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 offer008/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="offer007">
+				<Option output="/home/pc/leetcode/offer/cmake-build-debug/offer007" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pc/leetcode/offer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 offer007"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="offer007/fast">
+				<Option output="/home/pc/leetcode/offer/cmake-build-debug/offer007" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pc/leetcode/offer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 offer007/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/home/pc/leetcode/offer/cmake-build-debug"/>
 				<Option type="4"/>
@@ -27,11 +129,47 @@
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="offer006">
+				<Option output="/home/pc/leetcode/offer/cmake-build-debug/offer006" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/pc/leetcode/offer/cmake-build-debug"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 offer006"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="offer006/fast">
+				<Option output="/home/pc/leetcode/offer/cmake-build-debug/offer006" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/pc/leetcode/offer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 offer006/fast"/>
 					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j16 -f &quot;/home/pc/leetcode/offer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -282,6 +420,15 @@
 		</Unit>
 		<Unit filename="/home/pc/leetcode/offer/offer突击005.cpp">
 			<Option target="offer005"/>
+		</Unit>
+		<Unit filename="/home/pc/leetcode/offer/offer突击006.cpp">
+			<Option target="offer006"/>
+		</Unit>
+		<Unit filename="/home/pc/leetcode/offer/offer突击007.cpp">
+			<Option target="offer007"/>
+		</Unit>
+		<Unit filename="/home/pc/leetcode/offer/offer突击008.cpp">
+			<Option target="offer008"/>
 		</Unit>
 		<Unit filename="/home/pc/leetcode/offer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
